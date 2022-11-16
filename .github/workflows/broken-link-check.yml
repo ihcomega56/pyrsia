@@ -15,4 +15,4 @@ jobs:
         uses: ruzickap/action-my-broken-link-checker@v2
         with:
           url: https://pyrsia.io/
-          cmd_params: "--buffer-size=8192 --max-connections=3 --color=always --json -e https://stackoverflow.com --verbose=false"  # Refer to https://github.com/raviqqe/muffet/blob/main/arguments.go
+          cmd_params: "--buffer-size=8192 --max-connections=3 --color=always --json -e https://stackoverflow.com"  # Refer to https://github.com/raviqqe/muffet/blob/main/arguments.go
