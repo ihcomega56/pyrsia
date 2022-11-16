@@ -19,7 +19,7 @@ jobs:
           url: "https://pyrsia.io/"
           # optional:
           honorRobotExclusions: false
-          ignorePatterns: ""
+          ignorePatterns: '^https:\/\/latex\.codecogs\.com.*$'
           recursiveLinks: true
       - name: Get the result
         run: echo "${{steps.link-report.outputs.result}}"
