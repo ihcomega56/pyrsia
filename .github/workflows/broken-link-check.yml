@@ -6,20 +6,15 @@ on:
     types: [check-link]
   push: # for test
 
+env:
+  TARGET: https://pyrsia.io/
+  RECURSIVE: true
+  
+
 jobs:
-  broken_link_checker_job:
+  check:
+    name: Broken Link Check
     runs-on: ubuntu-latest
-    name: Check for broken links
     steps:
-      - name: Check for broken links
-        id: link-report
-        uses: celinekurpershoek/link-checker@v1.0.2
-        with:
-          # Required:
-          url: "https://pyrsia.io/"
-          # optional:
-          honorRobotExclusions: false
-          ignorePatterns: ""
-          recursiveLinks: true
-      - name: Get the result
-        run: echo "${{steps.link-report.outputs.result}}"
+      - name: Broken Link Check
+        uses: technote-space/broken-link-checker-action@v2
