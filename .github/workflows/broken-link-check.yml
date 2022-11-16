@@ -23,3 +23,9 @@ jobs:
           recursiveLinks: true
       - name: Get the result
         run: echo "${{steps.link-report.outputs.result}}"
+      - uses: JasonEtco/create-an-issue@v2
+        if: ${{ failure() }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.gh_token }}
+        with:
+          filename: .github/ISSUE_TEMPLATE/broken_link.md
