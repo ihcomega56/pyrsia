@@ -7,9 +7,8 @@ on:
   push: # for test
 
 env:
-  TARGET: https://pyrsia.io/
+  TARGET: "https://pyrsia.io/"
   RECURSIVE: true
-  
 
 jobs:
   check:
