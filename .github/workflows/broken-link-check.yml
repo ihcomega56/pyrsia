@@ -4,6 +4,7 @@ on:
     - cron: 0 0 1 * * # run monthly
   repository_dispatch: # run manually
     types: [check-link]
+  push: # for test
 
 jobs:
   broken_link_checker_job:
