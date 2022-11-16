@@ -7,13 +7,12 @@ on:
   push: # for test
 
 jobs:
-  check:
-    name: Broken Link Check
+  my-broken-link-checker:
+    name: Check broken links
     runs-on: ubuntu-latest
     steps:
-      - name: Broken Link Check
-        uses: technote-space/broken-link-checker-action@v2
+      - name: Check
+        uses: ruzickap/action-my-broken-link-checker@v2
         with:
-          TARGET: "https://pyrsia.io/"
-          RECURSIVE: true
-          GITHUB_TOKEN: ${{secrets.gh_token}}
+          url: https://pyrsia.io/
+          cmd_params: "--max-connections=3 --color=always"  # Refer to https://github.com/raviqqe/muffet/blob/main/arguments.go
