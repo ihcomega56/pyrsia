@@ -6,10 +6,6 @@ on:
     types: [check-link]
   push: # for test
 
-env:
-  TARGET: "https://pyrsia.io/"
-  RECURSIVE: true
-
 jobs:
   check:
     name: Broken Link Check
@@ -17,3 +13,6 @@ jobs:
     steps:
       - name: Broken Link Check
         uses: technote-space/broken-link-checker-action@v2
+        with:
+          TARGET: "https://pyrsia.io/"
+          RECURSIVE: true
