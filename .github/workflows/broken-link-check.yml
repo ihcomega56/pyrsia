@@ -24,6 +24,8 @@ jobs:
       - name: Get the result
         run: echo "${{steps.link-report.outputs.result}}"
       - uses: actions/checkout@v2
+        with:
+          ref: find-broken-links # for test
       - uses: JasonEtco/create-an-issue@v2
         if: ${{ failure() }}
         env:
