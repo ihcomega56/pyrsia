@@ -16,3 +16,4 @@ jobs:
         with:
           TARGET: "https://pyrsia.io/"
           RECURSIVE: true
+          GITHUB_TOKEN: ${{secrets.gh_token}}
