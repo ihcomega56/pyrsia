@@ -1,8 +1,0 @@
-name: "Broken links"
-description: Broken links checker
-title: Broken links found
-body:
-  - type: markdown
-    attributes:
-      value: |
-        https://github.com/ihcomega56/pyrsia/actions/runs/{{ github.run_id }}
