@@ -1,3 +1,6 @@
+[![Coverage Status](https://coveralls.io/repos/github/pyrsia/pyrsia/badge.svg?branch=main)](https://coveralls.io/github/pyrsia/pyrsia?branch=main)
+[![Linting](https://github.com/pyrsia/pyrsia/actions/workflows/lint.yml/badge.svg)](https://github.com/pyrsia/pyrsia/actions/workflows/lint.yml)
+
 # Welcome to Pyrsia
 
 ![logo](https://raw.githubusercontent.com/pyrsia/.github/main/images/logo-color.svg)
